@@ -7,4 +7,7 @@ install:
 test:
 	python -m pytest tests/*.py
 	
+lint:
+	hadolint Dockerfile --ignore DL3013
+	
 all: install test
